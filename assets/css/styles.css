@@ -1,0 +1,472 @@
+/* Allgemein 
+============================================================================================= */
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em; 
+  padding-top: 56px;
+}
+
+.nav-dist {
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+
+  body {
+    padding-top: 66px;
+  }
+
+  .nav-dist {
+    height: 66px;
+  }
+}
+
+#home,
+#lineup,
+#anfahrt,
+#imprint {
+  z-index: 1;
+  min-height: 100vh;
+  position: relative;
+} 
+
+#jam,
+#partner,
+#contact {
+  z-index: 2;
+  position: relative;
+}
+
+footer {
+  z-index: 3;
+  position: relative;
+}
+
+/* Background image */
+
+#bg-image {
+  position: fixed;
+  z-index: -1;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/bg/bg_home_1920.jpg');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 0;
+  background-size: cover;
+}
+
+@media (min-width: 576px) {
+
+  #bg-image {
+    top: 66px;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  #bg-image {
+    background-image: url('../img/bg/bg_home_3840.jpg');
+  }
+}
+
+/* Card */
+
+.card {
+  border: 1px solid rgb(52, 57, 63); 
+  border-radius: 0;
+  background-color: rgb(183, 188, 191);
+  color: rgb(52, 57, 63); 
+}
+
+.card h4 {
+  font-weight: 500;
+}
+
+.card h5 {
+  font-weight: 400;
+  font-size: 0.95em;
+}
+
+.card-img-wrapper {
+  border: 1px solid rgb(137, 146, 158);
+  margin: 1px;
+  position: relative;
+  height: 100%;
+}
+
+.card-img-wrapper object {
+  position: relative;
+  width: 100%;
+  height: 12em;
+  padding: 5%;
+  vertical-align: middle;
+}
+
+/* Link Icon */
+
+.link-icon {
+  color: rgb(107, 116, 125);
+  background-color: rgb(254, 254, 254);
+  border: 0.1em solid rgb(88, 94, 102);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 0.02em;
+  padding-left: 0.0em;
+  text-shadow: none;
+}
+
+.link-icon:hover {
+  color: rgb(52, 57, 63);
+  border-color: rgb(52, 57, 63);
+}
+
+/* Schatten */
+
+.anfahrt-map,
+.anfahrt-beschreibung,
+.artist-card,
+.home-btn,
+.imprint-card,
+.lineup-card,
+.navbar,
+.video-card,
+#jam,
+#partner,
+#contact,
+footer {
+  box-shadow: 0px 0px 6px black;
+}
+
+.home-btn,
+#lineup h1,
+#lineup h2,
+#anfahrt h1 {
+  text-shadow: 0px 0px 6px black;
+}
+
+/* Schatten */
+
+.partner-card {
+  box-shadow: 0px 0px 3px rgb(52, 57, 63);
+}
+
+/* Schrift */
+
+h1 {
+  font-size: 2.7em;
+}
+
+.h1-norm {
+  display: none;
+}
+
+.h1-break {
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .h1-norm {
+    display: inline-block;
+  }
+  
+  .h1-break {
+    display: none;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-bold {
+  font-weight: 700;
+}
+
+/* Hilfsklassen */
+
+a.phone-number {
+  color: rgb(254, 254, 254);
+}
+
+a.phone-number:hover {
+  color: rgb(52, 57, 63);
+  text-decoration: none;
+}
+
+/* Navbar 
+============================================================================================= */
+
+nav a.dropdown-item {
+  color: rgb(152, 155, 158);
+  font-weight: 500;
+}
+
+nav a.dropdown-item:active{
+  background-color: rgb(88, 94, 102);
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  display: none;
+  vertical-align: middle;
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+  .navbar-logo {
+    display: inline-block;
+  }
+}
+
+/* Home
+============================================================================================= */
+
+.home-logo {
+  min-width: 40%;
+  max-width: 40%;
+  margin-top: 6em;
+  -webkit-filter: drop-shadow(0px 0px 6px black);
+  filter: drop-shadow(0px 0px 6px black);
+  display: inline;
+}
+
+.home-btn {
+  margin-top: 4em;
+}
+
+/* Meda Queries */
+
+@media (max-height: 420px) {
+  .home-logo {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 767px) {
+  .home-logo {
+    min-width: 25%;
+    max-width: 25%;
+  }
+
+  .home-btn {
+    margin-top: 4em;
+  }
+}
+
+/* Jam 
+============================================================================================= */
+
+.jam-vvk
+ {
+  font-weight: 500;
+  font-size: 1.15em;
+}
+
+/* Line-up 
+============================================================================================= */
+
+/* Videos */
+
+.video-card {
+  min-height: 300px;
+}
+
+.video-play-icon {
+  color: rgb(254, 254, 254);
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* Partner 
+============================================================================================= */
+
+.carousel-item {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.partner-card h4 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .partner-card h4 {
+    display: inline;
+  }
+}
+
+/* Anfahrt 
+============================================================================================= */
+
+.anfahrt-beschreibung h5 {
+  font-weight: 500;
+  font-size: 1.15em;
+}
+
+.anfahrt-map iframe {
+  height: 450px;
+  width: 100%;
+  border: 1px solid rgb(52, 57, 63); 
+}
+
+/* Kontakt 
+============================================================================================= */
+
+a.contact-link {
+  color: rgb(254, 254, 254);
+  display: block;
+}
+
+a.contact-link:hover {
+  color: rgb(183, 188, 191);
+  text-decoration: none;
+}
+
+span.contact-icon {
+  display: inline-block;
+  text-align: center;
+  width: 6%;
+  font-size: 1.1em;
+}
+
+span.contact-text {
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.contact-form-subheading {
+  font-weight: 400;
+}
+
+.contact-link-list {
+  list-style: none;
+  padding: 0;}
+
+.contact-submit-button:hover {
+  box-shadow: 0px 0px 3px rgb(52, 57, 63);
+}
+
+.form-control:hover,
+.form-control:focus {
+  border: 1px solid rgb(52, 57, 63); 
+  box-shadow: 0px 0px 3px rgb(52, 57, 63);
+}
+
+/* Footer 
+============================================================================================= */
+
+footer {
+  font-size: 0.9em;
+  padding-top: 40px;
+}
+
+footer hr {
+  background-color: rgb(88, 94, 102);
+}
+
+.footer-copyright-links a,
+.footer-list a {  
+  color: rgb(183, 188, 191);
+}
+
+.footer-copyright-links a:hover,
+.footer-list a:hover {
+  text-decoration: none;
+  color: rgb(254, 254, 254); 
+}
+
+.footer-link-icon {
+  display: inline-block;
+  text-align: center;
+  width: 1.4em;
+}
+
+.footer-list {
+  margin-bottom: 0;
+}
+
+.footer-list,
+.footer-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-list-headline {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.8em;
+}
+
+.footer-list-main-element {
+  margin-bottom: 0.6em;
+}
+
+.footer-thump {
+  width: 65px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+  border: 1px solid rgb(75, 77, 80);
+}
+
+.footer-thump:hover {
+  box-shadow: 0px 0px 2px black;
+  opacity: 0.5;
+}
+
+/* Imprint 
+============================================================================================= */
+
+#imprint {
+  font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+  .imprint-card {
+    padding: 1em;
+  }
+}
+
+.imprint-card h5 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.8em;
+}
+
+.imprint-card a {
+  text-decoration: underline;
+}
+
+.imprint-card a:hover {
+  color: rgb(52, 57, 63) !important;
+}
+
